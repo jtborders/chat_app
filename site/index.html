@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="icon" href="./favicon.svg">
+  <title>BroChat</title>
+</head>
+<body>
+  <div class="header">
+    BroChat
+  </div>
+  <div class="main">
+    <div id="chats">
+      <form id="createChat" action="/api/create_chat" method="post">
+        <input type="text" id="usernames" name="usernames"/>
+      </form>
+    </div>
+    <div class="mainChat">
+      <div id="messages"></div>
+      <div class="spacer"></div>
+      <textarea id="textarea"></textarea>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

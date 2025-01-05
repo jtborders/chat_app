@@ -1,0 +1,61 @@
+* {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    height: calc(100vh - 3rem);
+    display: flex;
+}
+
+#chats {
+    height: 100%;
+    width: 20%;
+}
+
+#chats > a, input {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    cursor: grab;
+}
+
+.mainChat {
+    height: 100%;
+    width: 80%;
+    background-color: yellow;
+}
+.mainChat {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+textarea {
+    width: 100%;
+    height: 20%;
+}
